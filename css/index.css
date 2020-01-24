@@ -135,7 +135,23 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #F6F7F8;
+}
+@keyframes bgAnimation {
+  0% {
+    background-position: 7% 0%;
+  }
+  50% {
+    background-position: 94% 100%;
+  }
+  100% {
+    background-position: 7% 0%;
+  }
+}
+body {
+  background: linear-gradient(315deg, #c04bf2, #6232a6, #20448c, #3d71d9, #144673);
+  background-size: 1000% 1000%;
+  animation: bgAnimation 48s ease infinite;
 }
 h1,
 h2,
@@ -162,11 +178,11 @@ p {
 }
 nav {
   width: 100%;
-  background-color: #F6F6F6;
+  background-color: #5E6164;
   border-color: #F1F1F1;
   border-style: double;
   border-width: 1px;
-  color: #454A59;
+  color: #F6F7F8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -199,8 +215,8 @@ nav .nav-links .link {
   color: inherit;
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
+  color: #F6F7F8;
+  background: #5E6164;
   padding: 20px 0;
   border-color: #e0e0e0;
   border-style: double;
