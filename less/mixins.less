@@ -7,6 +7,17 @@
     padding: @padding-v @padding-h;
     text-align: center;
     font-size: 1.8rem;
+    border: solid 1px @btn-bg-color;
     border-radius: 5px;
     font-weight: bold;
+}
+.flex-center() {
+    display: flex;
+    justify-content: center;
+}
+
+.double-border(@line-color) {
+    border-color: @line-color;
+    border-style: double;
+    border-width: 1px;
 }

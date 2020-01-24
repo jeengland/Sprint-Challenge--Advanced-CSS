@@ -247,8 +247,13 @@ footer {
   padding: 3% 4%;
   text-align: center;
   font-size: 1.8rem;
+  border: solid 1px #22283A;
   border-radius: 5px;
   font-weight: bold;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
