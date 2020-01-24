@@ -12,6 +12,18 @@ html, body {
   color: @main-font-color;
 }
 
+@keyframes bgAnimation {
+  0%{background-position:7% 0%}
+  50%{background-position:94% 100%}
+  100%{background-position:7% 0%}
+}
+
+body {
+  background: linear-gradient(315deg, #c04bf2, #6232a6, #20448c, #3d71d9, #144673);
+  background-size: 1000% 1000%;
+  animation: bgAnimation 48s ease infinite;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
